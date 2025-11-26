@@ -3,8 +3,8 @@ self.__BUILD_MANIFEST = {
     "afterFiles": [],
     "beforeFiles": [
       {
-        "source": "/WellFlowApp//_next/:path+",
-        "destination": "/WellFlowApp/_next/:path+"
+        "source": "/health-wellness-portal//_next/:path+",
+        "destination": "/health-wellness-portal/_next/:path+"
       }
     ],
     "fallback": []
