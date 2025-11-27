@@ -32,7 +32,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #ecfdf5 0%, #f0fdfa 50%, #f0f9ff 100%);
+            background: linear-gradient(135deg, #ecfdf5 0%, #f0fdfa 50%, #f0fdf4 100%);
             min-height: 100vh;
             overflow-x: hidden;
         }
@@ -1496,6 +1496,316 @@
             cursor: pointer;
         }
 
+        /* ASSESSMENT PAGE */
+        .assessment-container {
+            max-width: 800px;
+            margin: 0 auto;
+            animation: slideUp 0.6s ease-out;
+        }
+
+        .assessment-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .assessment-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .assessment-subtitle {
+            color: var(--gray-600);
+        }
+
+        /* CUSTOMERS PAGE */
+        .customers-container {
+            max-width: 900px;
+            margin: 0 auto;
+            animation: slideUp 0.6s ease-out;
+        }
+
+        .customers-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .customers-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .customers-subtitle {
+            color: var(--gray-600);
+        }
+
+        /* REGISTRATION PAGE */
+        .registration-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+
+        .registration-card {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            max-width: 32rem;
+            width: 100%;
+            animation: slideUp 0.6s ease-out;
+        }
+
+        .registration-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .registration-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, var(--emerald), var(--teal));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .registration-subtitle {
+            color: var(--gray-600);
+            font-size: 0.9rem;
+        }
+
+        .registration-footer {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .registration-footer button {
+            background: none;
+            border: none;
+            color: var(--emerald);
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .step-indicator {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+
+        .step-dot {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            border: 2px solid var(--gray-300);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: white;
+            color: var(--gray-600);
+        }
+
+        .step-dot.active {
+            background: var(--emerald);
+            color: white;
+            border-color: var(--emerald);
+        }
+
+        .step-dot.completed {
+            background: var(--teal);
+            color: white;
+            border-color: var(--teal);
+        }
+
+        .badge-input-group {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .badge-input-group input {
+            flex: 1;
+        }
+
+        .badge-verify-btn {
+            padding: 0.5rem 1rem;
+            background: var(--emerald);
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .badge-verify-btn:hover {
+            background: var(--teal);
+        }
+
+        .badge-verify-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .verification-status {
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
+
+        .verification-success {
+            background: #ecfdf5;
+            border: 1px solid #86efac;
+            color: #166534;
+        }
+
+        .verification-error {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            color: #dc2626;
+        }
+
+        /* PROGRAM REVIEW STYLES */
+        .program-review-container {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            max-width: 48rem;
+            margin: 2rem auto;
+        }
+
+        .program-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 1rem;
+        }
+
+        .program-description {
+            color: var(--gray-600);
+            margin-bottom: 2rem;
+        }
+
+        .program-card {
+            background: linear-gradient(135deg, #ecfdf5 0%, #f0fdfa 100%);
+            border: 2px solid var(--emerald);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .program-card-title {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--emerald);
+            margin-bottom: 0.5rem;
+        }
+
+        .program-card-content {
+            color: var(--gray-700);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .program-card-items {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+        }
+
+        .program-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--gray-700);
+            font-size: 0.9rem;
+        }
+
+        .acceptance-section {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--gray-200);
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+        }
+
+        .acceptance-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--gray-300);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        input[type="number"]:focus,
+        select:focus {
+            outline: none;
+            border-color: var(--emerald);
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+        }
+
+        .email-suffix {
+            display: flex;
+            align-items: center;
+            gap: 0;
+            border: 1px solid var(--gray-300);
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        .email-suffix input {
+            border: none;
+            border-right: 1px solid var(--gray-300);
+            border-radius: 0;
+            flex: 1;
+        }
+
+        .email-suffix input:focus {
+            box-shadow: inset 0 0 0 3px rgba(16, 185, 129, 0.1);
+        }
+
+        .email-suffix span {
+            padding: 0.5rem 1rem;
+            background: var(--gray-50);
+            color: var(--gray-600);
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .email-suffix input::placeholder {
+            color: var(--gray-400);
+        }
+
+
         /* RESPONSIVE */
         @media (max-width: 768px) {
             .navbar-content {
@@ -1543,6 +1853,10 @@
                 left: 1rem;
                 max-width: none;
             }
+
+            .registration-card {
+                max-width: none;
+            }
         }
     </style>
 </head>
@@ -1576,9 +1890,103 @@
             <div class="quick-login-label">Quick Login (Demo Users)</div>
             <div class="quick-login-buttons" id="quickLoginButtons"></div>
 
+            <!-- ADD CREATE ACCOUNT BUTTON -->
+            <div class="divider"></div>
+            <button class="btn btn-secondary" onclick="showRegistration()" style="width: 100%; background: linear-gradient(90deg, var(--emerald), var(--teal)); color: white; border: none; margin-bottom: 0;">
+                Create New Account
+            </button>
+
             <p class="login-footer">Try any demo account with password: 'password123'</p>
         </div>
     </div>
+
+    <!-- REGISTRATION PAGE -->
+    <div id="registrationPage" class="registration-container" style="display: none;">
+        <div class="registration-card">
+            <div class="registration-header">
+                <h1 class="registration-title">Join WellFlow</h1>
+                <p class="registration-subtitle" id="registrationSubtitle">Create Your Professional Account</p>
+            </div>
+
+            <div class="step-indicator" id="stepIndicator">
+                <div class="step-dot active" onclick="goToStep(1)">1</div>
+                <div class="step-dot" onclick="goToStep(2)">2</div>
+                <div class="step-dot" onclick="goToStep(3)">3</div>
+            </div>
+
+            <!-- Step 1: Professional Credentials -->
+            <div id="step1" class="registration-step">
+                <h3 style="font-weight: 700; margin-bottom: 1rem;">Step 1: Verify Professional Credentials</h3>
+                
+                <div class="form-group">
+                    <label for="badgeNumber">Company Badge Number</label>
+                    <div class="badge-input-group">
+                        <input type="text" id="badgeNumber" placeholder="Enter your company badge number" maxlength="10">
+                        <button type="button" class="badge-verify-btn" onclick="verifyBadge()">Verify</button>
+                    </div>
+                    <div id="badgeStatus" class="verification-status" style="display: none;"></div>
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="goToStep(2)" id="step1NextBtn" disabled style="margin-top: 1rem;">
+                    Next: Professional Email
+                </button>
+            </div>
+
+            <!-- Step 2: Professional Email -->
+            <div id="step2" class="registration-step" style="display: none;">
+                <h3 style="font-weight: 700; margin-bottom: 1rem;">Step 2: Professional Email</h3>
+                
+                <div class="form-group">
+                    <label for="emailPrefix">Email Address</label>
+                    <div class="email-suffix">
+                        <input type="text" id="emailPrefix" placeholder="your.name" maxlength="50">
+                        <span>@svitlasystem.com</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regPassword">Password</label>
+                    <input type="password" id="regPassword" placeholder="••••••••" required>
+                </div>
+
+                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                    <button type="button" class="btn btn-secondary" onclick="goToStep(1)" style="flex: 1; background: var(--gray-200); color: var(--gray-900);">
+                        Back
+                    </button>
+                    <button type="button" class="btn btn-primary" onclick="goToStep(3)" style="flex: 1;">
+                        Next: Review Program
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 3: Program Review & Acceptance -->
+            <div id="step3" class="registration-step" style="display: none;">
+                <h3 style="font-weight: 700; margin-bottom: 1rem;">Step 3: Review Your Wellness Program</h3>
+                <p style="color: var(--gray-600); margin-bottom: 1.5rem;">Based on your health profile, here's your personalized program:</p>
+
+                <div id="programReviewContent"></div>
+
+                <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                    <button type="button" class="btn btn-secondary" onclick="goToStep(2)" style="flex: 1; background: var(--gray-200); color: var(--gray-900);">
+                        Back
+                    </button>
+                    <button type="button" class="btn btn-primary" onclick="acceptProgram()" style="flex: 1;">
+                        Accept & Create Account
+                    </button>
+                </div>
+            </div>
+
+            <div class="registration-footer">
+                <p>Already have an account? <button onclick="hideRegistration()" style="background: none; border: none; color: var(--emerald); cursor: pointer; font-weight: 600; text-decoration: underline;">Log In</button></p>
+            </div>
+        </div>
+    </div>
+
 
     <!-- DASHBOARD PAGE -->
     <div id="dashboardPage" style="display: none;">
@@ -1637,6 +2045,54 @@
                         <div class="daily-points">
                             <span class="daily-points-label">Today's Earned Points:</span>
                             <div class="daily-points-value" id="dailyPoints">0⚡</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ASSESSMENT PAGE -->
+                <!-- Add new assessment/evaluation page -->
+                <div id="assessmentPage" class="page" style="display: none;">
+                    <div class="assessment-container">
+                        <div class="assessment-header">
+                            <h1 class="assessment-title">Health Assessment</h1>
+                            <p class="assessment-subtitle">Let's personalize your wellness journey</p>
+                        </div>
+
+                        <div id="assessmentContent" style="margin-top: 2rem;"></div>
+                    </div>
+                </div>
+
+                <!-- CREATE CUSTOMER PAGE -->
+                <!-- Add new customer creation page -->
+                <div id="customersPage" class="page" style="display: none;">
+                    <div class="customers-container">
+                        <div class="customers-header">
+                            <h1 class="customers-title">Create New Customer</h1>
+                            <p class="customers-subtitle">Add a new member to your wellness program</p>
+                        </div>
+
+                        <div id="customerForm" style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); max-width: 600px; margin: 2rem auto;">
+                            <div class="form-group">
+                                <label for="newCustomerName">Full Name</label>
+                                <input type="text" id="newCustomerName" class="search-input" placeholder="John Doe" style="border: 1px solid #d1d5db;">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="newCustomerEmail">Email</label>
+                                <input type="email" id="newCustomerEmail" class="search-input" placeholder="john@example.com" style="border: 1px solid #d1d5db;">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="newCustomerPassword">Password</label>
+                                <input type="password" id="newCustomerPassword" class="search-input" placeholder="••••••••" style="border: 1px solid #d1d5db;">
+                            </div>
+
+                            <button class="btn btn-primary" onclick="createNewCustomer()" style="width: 100%; margin-top: 1rem;">Create Customer</button>
+                        </div>
+
+                        <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e5e7eb;">
+                            <h3 style="font-weight: 700; margin-bottom: 1rem;">Manage Assessment Categories & Options</h3>
+                            <div id="categoriesManager"></div>
                         </div>
                     </div>
                 </div>
@@ -1758,7 +2214,7 @@
 
     <script>
         // DATA
-        const mockUsers = [
+        const mockUsers = JSON.parse(localStorage.getItem('mockUsers')) || [
             { id: '1', name: 'Sarah Johnson', email: 'sarah@example.com', password: 'password123', avatar: 'https://api.placeholder.com/woman-with-fitness-gear.jpg', points: 2450, rank: 'Gold', totalDistance: 125.5, workoutsCompleted: 42, streakDays: 15, badges: ['First Step', 'Week Warrior', 'Month Master', 'Consistency Pro'] },
             { id: '2', name: 'Mike Chen', email: 'mike@example.com', password: 'password123', avatar: 'https://api.placeholder.com/man-running-outdoor.jpg', points: 3120, rank: 'Platinum', totalDistance: 215.8, workoutsCompleted: 68, streakDays: 32, badges: ['First Step', 'Week Warrior', 'Month Master', 'Consistency Pro', 'Elite Runner'] },
             { id: '3', name: 'Emily Rodriguez', email: 'emily@example.com', password: 'password123', avatar: 'https://api.placeholder.com/woman-yoga.png', points: 1850, rank: 'Silver', totalDistance: 87.3, workoutsCompleted: 28, streakDays: 8, badges: ['First Step', 'Week Warrior'] },
@@ -1806,6 +2262,167 @@
         let selectedPlaceDifficulty = 'all';
         let customSuggestions = JSON.parse(localStorage.getItem('customSuggestions')) || [];
 
+        let registrationData = {
+            badgeNumber: '',
+            badgeVerified: false,
+            emailPrefix: '',
+            fullName: '',
+            password: '',
+            acceptedProgram: false
+        };
+
+        let validBadges = ['EMP001', 'EMP002', 'EMP003', 'EMP004', 'EMP005', 'SVITLA001', 'SVITLA002'];
+
+        function showRegistration() {
+            document.getElementById('loginPage').style.display = 'none';
+            document.getElementById('registrationPage').style.display = 'flex';
+            renderStepIndicator();
+            goToStep(1);
+        }
+
+        function hideRegistration() {
+            document.getElementById('registrationPage').style.display = 'none';
+            document.getElementById('loginPage').style.display = 'flex';
+            registrationData = { badgeNumber: '', badgeVerified: false, emailPrefix: '', fullName: '', password: '', acceptedProgram: false };
+        }
+
+        function renderStepIndicator() {
+            const indicator = document.getElementById('stepIndicator');
+            indicator.innerHTML = '';
+            for (let i = 1; i <= 3; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'step-dot';
+                if (i <= (registrationData.badgeVerified ? 2 : 1)) dot.classList.add('completed');
+                if (i === (registrationData.acceptedProgram ? 4 : registrationData.badgeVerified ? 2 : 1)) dot.classList.add('active');
+                dot.textContent = i;
+                dot.onclick = () => i <= 2 && goToStep(i); // Only allow navigating to steps 1 and 2 directly
+                indicator.appendChild(dot);
+            }
+        }
+
+        function goToStep(step) {
+            document.querySelectorAll('.registration-step').forEach(s => s.style.display = 'none');
+            document.getElementById('step' + step).style.display = 'block';
+            
+            if (step === 3) {
+                renderProgramReview();
+            }
+            
+            renderStepIndicator();
+        }
+
+        function verifyBadge() {
+            const badgeNumber = document.getElementById('badgeNumber').value.trim().toUpperCase();
+            const statusDiv = document.getElementById('badgeStatus');
+            const nextBtn = document.getElementById('step1NextBtn');
+
+            if (!badgeNumber) {
+                statusDiv.textContent = 'Please enter a badge number';
+                statusDiv.className = 'verification-status verification-error';
+                statusDiv.style.display = 'block';
+                nextBtn.disabled = true;
+                registrationData.badgeVerified = false;
+                return;
+            }
+
+            if (validBadges.includes(badgeNumber)) {
+                statusDiv.innerHTML = '✓ Badge verified successfully! Employee found in system.';
+                statusDiv.className = 'verification-status verification-success';
+                statusDiv.style.display = 'block';
+                nextBtn.disabled = false;
+                registrationData.badgeNumber = badgeNumber;
+                registrationData.badgeVerified = true;
+            } else {
+                statusDiv.textContent = '✗ Badge number not found. Please check and try again.';
+                statusDiv.className = 'verification-status verification-error';
+                statusDiv.style.display = 'block';
+                nextBtn.disabled = true;
+                registrationData.badgeVerified = false;
+            }
+        }
+
+        function renderProgramReview() {
+            const programContent = document.getElementById('programReviewContent');
+            
+            const program = {
+                title: 'Your Personalized Wellness Program',
+                description: 'Based on your assessment results, here\'s your customized plan:',
+                activities: [
+                    { name: 'Daily Movement', frequency: '5 days/week', points: 50, description: '30-minute workout sessions (gym, running, yoga, etc.)' },
+                    { name: 'Nutrition Coaching', frequency: '3 days/week', points: 30, description: 'Meal planning and healthy eating guidance' },
+                    { name: 'Sleep Tracking', frequency: 'Daily', points: 20, description: 'Monitor and improve your sleep quality' },
+                    { name: 'Stress Management', frequency: '3 days/week', points: 25, description: 'Meditation, breathing exercises, mindfulness' },
+                    { name: 'Weekly Challenges', frequency: 'Weekly', points: 100, description: 'Participate in team wellness challenges' }
+                ]
+            };
+
+            let html = `<div class="program-card">
+                <div class="program-card-title">🎯 ${program.title}</div>
+                <div class="program-card-content">${program.description}</div>
+                <div class="program-card-items">`;
+
+            program.activities.forEach(activity => {
+                html += `
+                    <div class="program-item">
+                        <span>✓</span>
+                        <div>
+                            <strong>${activity.name}</strong> - ${activity.frequency}
+                            <br><span style="font-size: 0.85rem; color: var(--gray-600);">${activity.description}</span>
+                            <br><span style="color: var(--emerald); font-weight: 600;">+${activity.points} points per completion</span>
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += `</div></div>`;
+            programContent.innerHTML = html;
+        }
+
+        function acceptProgram() {
+            const emailPrefix = document.getElementById('emailPrefix').value.trim().toLowerCase();
+            const fullName = document.getElementById('fullName').value.trim();
+            const password = document.getElementById('regPassword').value.trim();
+
+            if (!emailPrefix || !fullName || !password) {
+                alert('Please fill in all fields');
+                return;
+            }
+
+            if (password.length < 6) {
+                alert('Password must be at least 6 characters');
+                return;
+            }
+
+            const newUser = {
+                id: Date.now(), // Simple unique ID
+                name: fullName,
+                email: emailPrefix + '@svitlasystem.com',
+                password: password,
+                badge: registrationData.badgeNumber,
+                points: 0,
+                rank: 'Bronze',
+                completedAssessment: false,
+                activities: [], // Will be populated by renderActivities
+                friends: [],
+                badges: ['Svitla Verified'],
+                avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=' + fullName.replace(/\s/g, ''),
+                joinDate: new Date().toISOString()
+            };
+
+            mockUsers.push(newUser);
+            localStorage.setItem('mockUsers', JSON.stringify(mockUsers));
+
+            registrationData = { badgeNumber: '', badgeVerified: false, emailPrefix: '', fullName: '', password: '', acceptedProgram: false };
+            
+            document.getElementById('registrationPage').style.display = 'none';
+            document.getElementById('loginPage').style.display = 'flex';
+            
+            alert(`Account created successfully! Welcome ${fullName}!\n\nEmail: ${newUser.email}\nYou can now log in with your credentials.`);
+            
+            document.getElementById('email').value = newUser.email;
+            document.getElementById('password').value = password;
+        }
+
         // INITIALIZATION
         function init() {
             renderQuickLoginButtons();
@@ -1819,6 +2436,7 @@
         // AUTH
         function renderQuickLoginButtons() {
             const container = document.getElementById('quickLoginButtons');
+            container.innerHTML = ''; // Clear previous buttons
             mockUsers.slice(0, 3).forEach(user => {
                 const btn = document.createElement('button');
                 btn.type = 'button';
@@ -1871,6 +2489,7 @@
         // DASHBOARD
         function showDashboard() {
             document.getElementById('loginPage').style.display = 'none';
+            document.getElementById('registrationPage').style.display = 'none';
             document.getElementById('dashboardPage').style.display = 'block';
             renderNavigation();
             renderProfile();
@@ -1878,15 +2497,18 @@
             renderActivities();
             renderNotifications();
             simulatePushNotification();
+            navigateTo(currentPage || 'home'); // Ensure initial page is set
         }
 
         function renderNavigation() {
             const navItems = [
                 { id: 'home', label: 'Home', icon: '🏠' },
+                { id: 'assessment', label: 'Assessment', icon: '📋' },
                 { id: 'leaderboard', label: 'Leaderboard', icon: '🏆' },
                 { id: 'friends', label: 'Friends', icon: '👥' },
                 { id: 'offers', label: 'Offers', icon: '🎁' },
-                { id: 'places', label: 'Places', icon: '📍' }
+                { id: 'places', label: 'Places', icon: '📍' },
+                { id: 'customers', label: 'Customers', icon: '👤' }
             ];
 
             const container = document.getElementById('navItems');
@@ -1907,15 +2529,23 @@
             document.getElementById(page + 'Page').style.display = 'block';
             renderNavigation();
 
+            // Call specific render functions for each page
+            if (page === 'assessment') renderAssessment();
             if (page === 'leaderboard') renderLeaderboard();
             if (page === 'friends') renderFriendsPage();
             if (page === 'offers') renderOffersPage();
             if (page === 'places') renderPlacesPage();
+            if (page === 'customers') renderCustomersPage();
+            if (page === 'home') {
+                renderProfile();
+                renderStats();
+                renderActivities();
+            }
         }
 
         function renderProfile() {
             document.getElementById('profileName').textContent = currentUser.name;
-            document.getElementById('profileAvatar').src = `https://api.placeholder.com/avatar-${currentUser.id}.jpg`;
+            document.getElementById('profileAvatar').src = currentUser.avatar; // Use dynamic avatar
             document.getElementById('profilePoints').textContent = `${currentUser.points.toLocaleString()} Points`;
 
             const rankBadge = document.getElementById('profileRank');
@@ -1933,7 +2563,7 @@
             const stats = [
                 { label: 'Workouts', value: currentUser.workoutsCompleted, icon: '💪', color: 'emerald', suffix: 'sessions' },
                 { label: 'Streak', value: currentUser.streakDays, icon: '🔥', color: 'orange', suffix: 'days' },
-                { label: 'Distance', value: currentUser.totalDistance, icon: '📈', color: 'blue', suffix: 'km' },
+                { label: 'Distance', value: currentUser.totalDistance.toFixed(1), icon: '📈', color: 'blue', suffix: 'km' },
                 { label: 'Badges', value: currentUser.badges.length, icon: '🏅', color: 'purple', suffix: 'earned' }
             ];
 
@@ -1963,6 +2593,13 @@
                 mindfulness: { bg: 'e9d5ff', border: 'd8b4fe' },
                 social: { bg: 'bfdbfe', border: '7dd3fc' }
             };
+
+            // Fetch user-specific activities or use mock if none
+            const userActivities = currentUser.activities && currentUser.activities.length > 0 ? 
+                                   currentUser.activities.map(ua => ({ ...mockActivities.find(ma => ma.id === ua.id), completed: ua.completed })) : 
+                                   mockActivities.map(activity => ({ ...activity, completed: false }));
+
+            activities = userActivities; // Update global activities state
 
             activities.forEach(activity => {
                 const colors = categoryColors[activity.category];
@@ -2000,6 +2637,20 @@
             if (activity && !activity.completed) {
                 activity.completed = true;
                 currentUser.points += activity.points;
+                currentUser.workoutsCompleted = (currentUser.workoutsCompleted || 0) + 1; // Increment workout count
+                // Update user's activities in the mockUsers array
+                const userIndex = mockUsers.findIndex(u => u.id === currentUser.id);
+                if (userIndex !== -1) {
+                    const updatedUserActivities = currentUser.activities ? currentUser.activities.map(a => a.id === id ? {...a, completed: true} : a) : [];
+                    if (!updatedUserActivities.some(a => a.id === id)) {
+                        updatedUserActivities.push({id: id, completed: true});
+                    }
+                    mockUsers[userIndex].activities = updatedUserActivities;
+                    mockUsers[userIndex].points = currentUser.points;
+                    mockUsers[userIndex].workoutsCompleted = currentUser.workoutsCompleted;
+                    localStorage.setItem('mockUsers', JSON.stringify(mockUsers));
+                }
+
                 localStorage.setItem('currentUser', JSON.stringify(currentUser));
                 renderActivities();
                 renderProfile();
@@ -2020,6 +2671,109 @@
             setTimeout(() => {
                 banner.style.display = 'none';
             }, 4000);
+        }
+
+        // ASSESSMENT
+        function renderAssessment() {
+            const container = document.getElementById('assessmentContent');
+            container.innerHTML = '';
+
+            assessmentCategories.forEach((category, catIndex) => {
+                const categoryDiv = document.createElement('div');
+                categoryDiv.style.cssText = 'background: #f9fafb; padding: 1.5rem; border-radius: 1rem; margin-bottom: 1.5rem;';
+
+                const categoryTitle = document.createElement('h3');
+                categoryTitle.style.cssText = 'font-weight: 700; font-size: 1.125rem; margin-bottom: 1rem; color: #1f2937;';
+                categoryTitle.textContent = category.name;
+                categoryDiv.appendChild(categoryTitle);
+
+                category.questions.forEach((question, questionIndex) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.style.cssText = 'margin-bottom: 1rem;';
+
+                    const questionLabel = document.createElement('label');
+                    questionLabel.style.cssText = 'display: block; font-weight: 600; margin-bottom: 0.5rem; color: #374151;';
+                    questionLabel.textContent = question.question;
+                    questionDiv.appendChild(questionLabel);
+
+                    const optionsDiv = document.createElement('div');
+                    optionsDiv.style.cssText = 'display: flex; flex-wrap: wrap; gap: 0.75rem;';
+
+                    question.options.forEach(option => {
+                        const btn = document.createElement('button');
+                        btn.type = 'button';
+                        btn.textContent = option;
+                        btn.className = 'btn btn-secondary';
+                        btn.style.cssText += 'flex: 1; min-width: 120px;';
+                        
+                        const savedAnswer = assessmentResults[question.id];
+                        if (savedAnswer === option) {
+                            btn.style.cssText += 'background: #10b981; color: white; border-color: #10b981;';
+                        }
+
+                        btn.onclick = () => {
+                            assessmentResults[question.id] = option;
+                            // Update currentUser's completedAssessment status if all categories are answered
+                            const allAnswered = assessmentCategories.every(cat => 
+                                cat.questions.every(q => assessmentResults[q.id])
+                            );
+                            if(allAnswered) {
+                                currentUser.completedAssessment = true;
+                                localStorage.setItem('currentUser', JSON.stringify(currentUser));
+                                // Update mockUsers array as well
+                                const userIndex = mockUsers.findIndex(u => u.id === currentUser.id);
+                                if (userIndex !== -1) {
+                                    mockUsers[userIndex].completedAssessment = true;
+                                    localStorage.setItem('mockUsers', JSON.stringify(mockUsers));
+                                }
+                            }
+                            localStorage.setItem('assessmentResults', JSON.stringify(assessmentResults));
+                            renderAssessment();
+                        };
+                        optionsDiv.appendChild(btn);
+                    });
+
+                    questionDiv.appendChild(optionsDiv);
+                    categoryDiv.appendChild(questionDiv);
+                });
+
+                container.appendChild(categoryDiv);
+            });
+
+            const buttonDiv = document.createElement('div');
+            buttonDiv.style.cssText = 'display: flex; gap: 1rem; margin-top: 2rem; justify-content: center;';
+
+            const saveBtn = document.createElement('button');
+            saveBtn.textContent = 'Save Assessment';
+            saveBtn.className = 'btn btn-primary';
+            saveBtn.onclick = () => {
+                localStorage.setItem('assessmentResults', JSON.stringify(assessmentResults));
+                showNotification('Assessment saved successfully!');
+            };
+
+            const resetBtn = document.createElement('button');
+            resetBtn.textContent = 'Reset Assessment';
+            resetBtn.className = 'btn btn-secondary';
+            resetBtn.onclick = () => {
+                if (confirm('Clear all assessment answers?')) {
+                    assessmentResults = {};
+                    // Update currentUser's completedAssessment status
+                    currentUser.completedAssessment = false;
+                    localStorage.setItem('currentUser', JSON.stringify(currentUser));
+                    // Update mockUsers array as well
+                    const userIndex = mockUsers.findIndex(u => u.id === currentUser.id);
+                    if (userIndex !== -1) {
+                        mockUsers[userIndex].completedAssessment = false;
+                        localStorage.setItem('mockUsers', JSON.stringify(mockUsers));
+                    }
+                    localStorage.setItem('assessmentResults', JSON.stringify(assessmentResults));
+                    renderAssessment();
+                }
+            };
+
+            buttonDiv.appendChild(saveBtn);
+            buttonDiv.appendChild(resetBtn);
+            container.appendChild(buttonDiv);
         }
 
         // LEADERBOARD
@@ -2077,19 +2831,20 @@
             if (!container) return;
 
             container.oninput = () => filterFriends();
-            filterFriends();
+            filterFriends(); // Initial call to render friends
         }
 
         function filterFriends() {
             const query = (document.getElementById('friendSearch')?.value || '').toLowerCase();
-            const otherUsers = mockUsers.filter(u => u.id !== currentUser.id);
+            // Filter out the current user and already added friends from the potential list
+            const otherUsers = mockUsers.filter(u => u.id !== currentUser.id && !friends.includes(u.id));
 
             const filtered = otherUsers.filter(u =>
                 u.name.toLowerCase().includes(query) ||
                 u.email.toLowerCase().includes(query)
             );
 
-            const myFriends = otherUsers.filter(u => friends.includes(u.id));
+            const myFriends = mockUsers.filter(u => friends.includes(u.id));
 
             // My Friends Section
             const mySection = document.getElementById('myFriendsSection');
@@ -2102,7 +2857,7 @@
                                 <div class="friend-card">
                                     <div class="friend-header">
                                         <div class="friend-user">
-                                            <img src="https://api.placeholder.com/avatar-${f.id}.jpg" alt="${f.name}" class="friend-avatar">
+                                            <img src="${f.avatar}" alt="${f.name}" class="friend-avatar">
                                             <div>
                                                 <div class="friend-name">${f.name}</div>
                                                 <div class="friend-rank">${f.rank}</div>
@@ -2120,12 +2875,12 @@
                     </div>
                 `;
             } else {
-                mySection.innerHTML = '';
+                mySection.innerHTML = '<p style="text-align: center; color: #9ca3af; padding: 2rem;">You have no friends yet. Start by adding some!</p>';
             }
 
             // Discover Friends Section
             const discoverSection = document.getElementById('discoverFriendsSection');
-            const discover = filtered.filter(u => !friends.includes(u.id));
+            const discover = filtered; // Already filtered out friends and current user
 
             if (discover.length > 0) {
                 discoverSection.innerHTML = `
@@ -2136,7 +2891,7 @@
                                 <div class="friend-card discover">
                                     <div class="friend-header">
                                         <div class="friend-user">
-                                            <img src="https://api.placeholder.com/avatar-${u.id}.jpg" alt="${u.name}" class="friend-avatar">
+                                            <img src="${u.avatar}" alt="${u.name}" class="friend-avatar">
                                             <div>
                                                 <div class="friend-name">${u.name}</div>
                                                 <div class="friend-rank">${u.rank}</div>
@@ -2154,19 +2909,35 @@
                     </div>
                 `;
             } else if (query) {
-                discoverSection.innerHTML = '<p style="text-align: center; color: #9ca3af; padding: 2rem;">No users found</p>';
+                discoverSection.innerHTML = '<p style="text-align: center; color: #9ca3af; padding: 2rem;">No users found matching your search.</p>';
+            } else {
+                discoverSection.innerHTML = ''; // Clear if no query and no results
             }
         }
 
         function addFriend(id) {
             if (!friends.includes(id)) {
                 friends.push(id);
-                filterFriends();
+                // Update current user's friends list
+                const userIndex = mockUsers.findIndex(u => u.id === currentUser.id);
+                if (userIndex !== -1) {
+                    mockUsers[userIndex].friends = friends;
+                    localStorage.setItem('mockUsers', JSON.stringify(mockUsers));
+                    localStorage.setItem('currentUser', JSON.stringify(currentUser)); // Update currentUser in localStorage
+                }
+                filterFriends(); // Re-render the friends page
             }
         }
 
         function removeFriend(id) {
             friends = friends.filter(f => f !== id);
+            // Update current user's friends list
+            const userIndex = mockUsers.findIndex(u => u.id === currentUser.id);
+            if (userIndex !== -1) {
+                mockUsers[userIndex].friends = friends;
+                localStorage.setItem('mockUsers', JSON.stringify(mockUsers));
+                localStorage.setItem('currentUser', JSON.stringify(currentUser)); // Update currentUser in localStorage
+            }
             filterFriends();
         }
 
@@ -2298,6 +3069,202 @@
             renderPlacesPage();
         }
 
+        // CUSTOMERS
+        function createNewCustomer() {
+            const name = document.getElementById('newCustomerName').value.trim();
+            const email = document.getElementById('newCustomerEmail').value.trim();
+            const password = document.getElementById('newCustomerPassword').value.trim();
+
+            if (!name || !email || !password) {
+                alert('Please fill in all fields');
+                return;
+            }
+
+            // Check if email already exists
+            if (mockUsers.some(u => u.email === email)) {
+                alert('This email address is already in use.');
+                return;
+            }
+
+            const newCustomer = {
+                id: Date.now().toString(), // Simple unique ID
+                name: name,
+                email: email,
+                password: password,
+                avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=' + name.replace(/\s/g, ''),
+                points: 0,
+                rank: 'Bronze',
+                workoutsCompleted: 0,
+                streakDays: 0,
+                badges: [],
+                friends: [],
+                joinDate: new Date().toISOString()
+            };
+
+            mockUsers.push(newCustomer);
+            localStorage.setItem('mockUsers', JSON.stringify(mockUsers));
+
+            document.getElementById('newCustomerName').value = '';
+            document.getElementById('newCustomerEmail').value = '';
+            document.getElementById('newCustomerPassword').value = '';
+
+            showNotification(`Customer "${name}" created successfully!`);
+        }
+
+        function renderCustomersPage() {
+            const container = document.getElementById('categoriesManager');
+            container.innerHTML = '';
+
+            assessmentCategories.forEach((category, catIndex) => {
+                const categoryCard = document.createElement('div');
+                categoryCard.style.cssText = 'background: white; padding: 1.5rem; border-radius: 1rem; margin-bottom: 1.5rem; border: 1px solid #e5e7eb;';
+
+                const categoryHeader = document.createElement('div');
+                categoryHeader.style.cssText = 'display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;';
+
+                const categoryName = document.createElement('h4');
+                categoryName.style.cssText = 'font-weight: 700; font-size: 1rem;';
+                categoryName.textContent = category.name;
+                categoryHeader.appendChild(categoryName);
+
+                const editBtn = document.createElement('button');
+                editBtn.textContent = '✏️ Edit';
+                editBtn.className = 'btn btn-secondary';
+                editBtn.style.fontSize = '0.875rem';
+                editBtn.onclick = () => toggleEditCategory(catIndex);
+                categoryHeader.appendChild(editBtn);
+
+                categoryCard.appendChild(categoryHeader);
+
+                const questionsDiv = document.createElement('div');
+                questionsDiv.style.cssText = 'display: flex; flex-direction: column; gap: 1rem;';
+
+                category.questions.forEach((question, qIndex) => {
+                    const questionCard = document.createElement('div');
+                    questionCard.style.cssText = 'background: #f9fafb; padding: 1rem; border-radius: 0.5rem; border: 1px solid #e5e7eb;';
+
+                    const questionTitle = document.createElement('div');
+                    questionTitle.style.cssText = 'font-weight: 600; margin-bottom: 0.5rem;';
+                    questionTitle.textContent = question.question;
+                    questionCard.appendChild(questionTitle);
+
+                    const optionsText = document.createElement('div');
+                    optionsText.style.cssText = 'font-size: 0.875rem; color: #6b7280; margin-bottom: 0.75rem;';
+                    optionsText.textContent = question.options.join(', ');
+                    questionCard.appendChild(optionsText);
+
+                    const actionButtons = document.createElement('div');
+                    actionButtons.style.cssText = 'display: flex; gap: 0.5rem;';
+
+                    const editQBtn = document.createElement('button');
+                    editQBtn.textContent = 'Edit Question';
+                    editQBtn.className = 'btn btn-secondary';
+                    editQBtn.style.fontSize = '0.875rem';
+                    editQBtn.onclick = () => editQuestion(catIndex, qIndex);
+                    actionButtons.appendChild(editQBtn);
+
+                    const deleteQBtn = document.createElement('button');
+                    deleteQBtn.textContent = 'Delete';
+                    deleteQBtn.className = 'btn btn-secondary';
+                    deleteQBtn.style.cssText = 'font-size: 0.875rem; background: #fee2e2; color: #991b1b; border: 1px solid #fecaca;';
+                    deleteQBtn.onclick = () => deleteQuestion(catIndex, qIndex);
+                    actionButtons.appendChild(deleteQBtn);
+
+                    questionCard.appendChild(actionButtons);
+                    questionsDiv.appendChild(questionCard);
+                });
+
+                categoryCard.appendChild(questionsDiv);
+
+                const addQuestionBtn = document.createElement('button');
+                addQuestionBtn.textContent = '+ Add Question to ' + category.name;
+                addQuestionBtn.className = 'btn btn-secondary';
+                addQuestionBtn.style.cssText = 'margin-top: 1rem; width: 100%;';
+                addQuestionBtn.onclick = () => addQuestion(catIndex);
+                categoryCard.appendChild(addQuestionBtn);
+
+                container.appendChild(categoryCard);
+            });
+
+            const addCategoryBtn = document.createElement('button');
+            addCategoryBtn.textContent = '+ Add New Category';
+            addCategoryBtn.className = 'btn btn-primary';
+            addCategoryBtn.style.cssText = 'margin-top: 2rem; width: 100%;';
+            addCategoryBtn.onclick = () => addCategory();
+            container.appendChild(addCategoryBtn);
+        }
+
+        // EDIT QUESTION MODAL
+        function editQuestion(catIndex, qIndex) {
+            const question = assessmentCategories[catIndex].questions[qIndex];
+            const newTitle = prompt('Edit question title:', question.question);
+            if (newTitle) {
+                assessmentCategories[catIndex].questions[qIndex].question = newTitle;
+                localStorage.setItem('assessmentCategories', JSON.stringify(assessmentCategories));
+                renderCustomersPage();
+            }
+        }
+
+        // ADD NEW QUESTION
+        function addQuestion(catIndex) {
+            const title = prompt('Enter new question:');
+            if (title) {
+                const optionsStr = prompt('Enter options separated by commas:');
+                if (optionsStr) {
+                    const options = optionsStr.split(',').map(o => o.trim()).filter(o => o); // Ensure no empty options
+                    if (options.length > 0) {
+                        const newQuestion = {
+                            id: 'q' + Date.now(),
+                            question: title,
+                            options: options
+                        };
+                        assessmentCategories[catIndex].questions.push(newQuestion);
+                        localStorage.setItem('assessmentCategories', JSON.stringify(assessmentCategories));
+                        renderCustomersPage();
+                    } else {
+                        alert('Please provide at least one option.');
+                    }
+                }
+            }
+        }
+
+        // DELETE QUESTION
+        function deleteQuestion(catIndex, qIndex) {
+            if (confirm('Delete this question?')) {
+                assessmentCategories[catIndex].questions.splice(qIndex, 1);
+                localStorage.setItem('assessmentCategories', JSON.stringify(assessmentCategories));
+                renderCustomersPage();
+            }
+        }
+
+        // ADD NEW CATEGORY
+        function addCategory() {
+            const name = prompt('Enter new category name:');
+            if (name) {
+                const newCategory = {
+                    id: 'cat' + Date.now(),
+                    name: name,
+                    type: 'custom', // Default type
+                    questions: []
+                };
+                assessmentCategories.push(newCategory);
+                localStorage.setItem('assessmentCategories', JSON.stringify(assessmentCategories));
+                renderCustomersPage();
+            }
+        }
+
+        // TOGGLE EDIT CATEGORY
+        function toggleEditCategory(catIndex) {
+            const category = assessmentCategories[catIndex];
+            const newName = prompt('Edit category name:', category.name);
+            if (newName) {
+                assessmentCategories[catIndex].name = newName;
+                localStorage.setItem('assessmentCategories', JSON.stringify(assessmentCategories));
+                renderCustomersPage();
+            }
+        }
+
+
         // NOTIFICATIONS
         function renderNotifications() {
             const container = document.getElementById('notificationsList');
@@ -2352,8 +3319,8 @@
         }
 
         function addCustomSuggestion() {
-            const title = document.getElementById('newSuggestionTitle').value;
-            const message = document.getElementById('newSuggestionMessage').value;
+            const title = document.getElementById('newSuggestionTitle').value.trim();
+            const message = document.getElementById('newSuggestionMessage').value.trim();
             const type = document.getElementById('newSuggestionType').value;
 
             if (title && message) {
@@ -2362,13 +3329,17 @@
                 document.getElementById('newSuggestionTitle').value = '';
                 document.getElementById('newSuggestionMessage').value = '';
                 renderSuggestions();
+            } else {
+                alert('Please enter both a title and a message.');
             }
         }
 
         function deleteCustomSuggestion(index) {
-            customSuggestions.splice(index, 1);
-            localStorage.setItem('customSuggestions', JSON.stringify(customSuggestions));
-            renderSuggestions();
+            if (confirm('Are you sure you want to delete this suggestion?')) {
+                customSuggestions.splice(index, 1);
+                localStorage.setItem('customSuggestions', JSON.stringify(customSuggestions));
+                renderSuggestions();
+            }
         }
 
         // PUSH NOTIFICATIONS
@@ -2392,6 +3363,16 @@
         function acceptPushNotification() {
             alert('Plan updated! Check your dashboard for recommendations.');
             document.getElementById('pushNotificationBanner').style.display = 'none';
+        }
+
+        function showNotification(message) {
+            const banner = document.getElementById('pushNotificationBanner');
+            banner.style.display = 'block';
+            document.getElementById('pushTitle').textContent = 'Success';
+            document.getElementById('pushMessage').textContent = message;
+            setTimeout(() => {
+                banner.style.display = 'none';
+            }, 3000);
         }
 
         // INIT
